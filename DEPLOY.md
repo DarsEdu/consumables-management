@@ -24,7 +24,7 @@ docker-compose up -d --build
 
 This will:
 - Build the Docker image
-- Start the container on port 3000 (won't conflict with Zabbix)
+- Start the container on port 3001 (won't conflict with Zabbix)
 - Run it in the background
 
 ---
@@ -39,14 +39,14 @@ docker ps
 docker logs consumables-app
 
 # Test API endpoint
-curl http://localhost:3000/api/inventory
+curl http://localhost:3001/api/inventory
 ```
 
 ---
 
 ## Step 4: Configure Nginx (Safe - Won't Break Zabbix)
 
-The container runs on port 3000, so it won't interfere with Zabbix. To access it via Nginx:
+The container runs on port 3001, so it won't interfere with Zabbix. To access it via Nginx:
 
 ### 4.1 Check Existing Nginx Configuration
 
@@ -103,7 +103,7 @@ server {
 
     # Consumables location (new)
     location /consumables {
-        proxy_pass http://localhost:3000;
+        proxy_pass http://localhost:3001;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -162,7 +162,7 @@ You can access it in two ways:
 
 ## Safety Notes
 
-✅ **Port 3000** - Container uses port 3000, won't conflict with Zabbix (usually on 80/443)  
+✅ **Port 3001** - Container uses port 3001, won't conflict with Zabbix (usually on 80/443)  
 ✅ **Separate Nginx config** - New config file, doesn't modify Zabbix config  
 ✅ **nginx -t** - Always test before reloading to ensure Zabbix isn't broken  
 ✅ **Docker container** - Isolated, can't interfere with Zabbix processes  
@@ -197,8 +197,8 @@ docker-compose logs -f
 # Restart container
 docker-compose restart
 
-# Check if port 3000 is in use (should show docker container)
-sudo netstat -tulpn | grep 3000
+# Check if port 3001 is in use (should show docker container)
+sudo netstat -tulpn | grep 3001
 
 # Check Nginx status
 sudo systemctl status nginx
@@ -235,13 +235,13 @@ sudo tail -f /var/log/nginx/error.log
 
 3. **Test direct access (bypass Nginx):**
    ```bash
-   curl http://localhost:3000/api/inventory
+   curl http://localhost:3001/api/inventory
    ```
 
 4. **Check firewall:**
    ```bash
    sudo ufw status
-   sudo ufw allow 3000/tcp  # If needed
+   sudo ufw allow 3001/tcp  # If needed
    ```
 
 ### If Zabbix stops working:
