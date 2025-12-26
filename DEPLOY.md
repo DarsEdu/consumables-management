@@ -146,7 +146,7 @@ You can access it in two ways:
 
 1. **Direct (port 3000):**
    ```
-   http://your-server-ip:3000
+   http://your-server-ip:3001
    ```
 
 2. **Via Nginx (if configured):**
