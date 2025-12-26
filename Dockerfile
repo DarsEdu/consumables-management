@@ -11,6 +11,7 @@ COPY package*.json ./
 RUN npm install --production
 
 # Copy application files
+COPY server.js ./
 COPY index.html app.js styles.css ./
 COPY inventory.json ./
 COPY unhcr-logo.png ./
