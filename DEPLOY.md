@@ -144,7 +144,7 @@ sudo systemctl reload nginx
 
 You can access it in two ways:
 
-1. **Direct (port 3000):**
+1. **Direct (port 3001):**
    ```
    http://your-server-ip:3001
    ```
