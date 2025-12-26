@@ -1,0 +1,581 @@
+{
+  "items": [
+    {
+      "id": "item-1",
+      "name": "9010 Hp Ink Cartridge black",
+      "quantity": "21",
+      "group": "Printers"
+    },
+    {
+      "id": "item-2",
+      "name": "9010 Hp Ink Cartridge cyan",
+      "quantity": "23",
+      "group": "Printers"
+    },
+    {
+      "id": "item-3",
+      "name": "9010 Hp Ink Cartridge magenta",
+      "quantity": "25",
+      "group": "Printers"
+    },
+    {
+      "id": "item-4",
+      "name": "9010 Hp Ink Cartridge yellow",
+      "quantity": "16",
+      "group": "Printers"
+    },
+    {
+      "id": "item-5",
+      "name": "Cisco 7841",
+      "quantity": "190",
+      "group": "Desk Phones"
+    },
+    {
+      "id": "item-6",
+      "name": "Cisco CP8821",
+      "quantity": "1",
+      "group": "Desk Phones"
+    },
+    {
+      "id": "item-7",
+      "name": "Logitech Mic",
+      "quantity": "4",
+      "group": "Video Conferance Appliances"
+    },
+    {
+      "id": "item-8",
+      "name": "Cisco Room Kit Mic extension cable",
+      "quantity": "9",
+      "group": "Video Conferance Appliances"
+    },
+    {
+      "id": "item-9",
+      "name": "Ethernet Dongles C-type",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-10",
+      "name": "Gigaset phone C610",
+      "quantity": "7",
+      "group": "Desk Phones"
+    },
+    {
+      "id": "item-11",
+      "name": "Gigaset phone CL540",
+      "quantity": "11",
+      "group": "Desk Phones"
+    },
+    {
+      "id": "item-12",
+      "name": "HCS Ethernet 1m",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-13",
+      "name": "HCS Ethernet 2m",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-14",
+      "name": "HCS Ethernet 3m",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-15",
+      "name": "HCS Ethernet 5m",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-16",
+      "name": "HP 2TB SATA",
+      "quantity": "5",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-17",
+      "name": "HP 3TB SATA",
+      "quantity": "1",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-18",
+      "name": "HP Color LazerJet Pro MFP M477fdw",
+      "quantity": "2",
+      "group": "Printers"
+    },
+    {
+      "id": "item-19",
+      "name": "HP Color LazerJet Pro MFP M477fnw",
+      "quantity": "1",
+      "group": "Printers"
+    },
+    {
+      "id": "item-20",
+      "name": "HP Color LazerJet Pro MFP M479fdw",
+      "quantity": "2",
+      "group": "Printers"
+    },
+    {
+      "id": "item-21",
+      "name": "HP Color LazerJet Pro MFP M479fnw",
+      "quantity": "2",
+      "group": "Printers"
+    },
+    {
+      "id": "item-22",
+      "name": "HP Monitor New Version",
+      "quantity": "32",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-23",
+      "name": "HP Monitors Old Version",
+      "quantity": "50",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-24",
+      "name": "HP OfficeJet Pro 9013",
+      "quantity": "4",
+      "group": "Printers"
+    },
+    {
+      "id": "item-25",
+      "name": "Keyboard",
+      "quantity": "370",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-26",
+      "name": "Mouse",
+      "quantity": "240",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-27",
+      "name": "Kensington Lock",
+      "quantity": "1 Box",
+      "group": "Accessories"
+    },
+    {
+      "id": "item-28",
+      "name": "Kingston 64GB USB",
+      "quantity": "87",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-29",
+      "name": "Lenovo Backpack",
+      "quantity": "70",
+      "group": "Accessories"
+    },
+    {
+      "id": "item-30",
+      "name": "Lenovo Charger 65W Used",
+      "quantity": "1 Box",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-31",
+      "name": "Lenovo Charger 65W",
+      "quantity": "200",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-32",
+      "name": "Lenovo Charger 90W NEW",
+      "quantity": "55",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-33",
+      "name": "Lenovo Charger 90W USED",
+      "quantity": "1 Box",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-34",
+      "name": "Lenovo Essential Wireless KB-mouse Combo",
+      "quantity": "110",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-35",
+      "name": "Logitech C310 720p Webcam",
+      "quantity": "3",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-36",
+      "name": "Logitech c920e webcam",
+      "quantity": "3",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-37",
+      "name": "Logitech c930e webcam",
+      "quantity": "76",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-38",
+      "name": "Logitech Headset Stereo H570e",
+      "quantity": "92",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-39",
+      "name": "Logitech Rally Plus",
+      "quantity": "3",
+      "group": "Video Conferance Appliances"
+    },
+    {
+      "id": "item-40",
+      "name": "M477 HP Cartridge black",
+      "quantity": "13",
+      "group": "Printers"
+    },
+    {
+      "id": "item-41",
+      "name": "M477 HP Cartridge cyan",
+      "quantity": "16",
+      "group": "Printers"
+    },
+    {
+      "id": "item-42",
+      "name": "M477 HP Cartridge magenta",
+      "quantity": "12",
+      "group": "Printers"
+    },
+    {
+      "id": "item-43",
+      "name": "M477 HP Cartridge yellow",
+      "quantity": "11",
+      "group": "Printers"
+    },
+    {
+      "id": "item-44",
+      "name": "M479 HP Cartridge black",
+      "quantity": "8",
+      "group": "Printers"
+    },
+    {
+      "id": "item-45",
+      "name": "M479 HP Cartridge cyan",
+      "quantity": "13",
+      "group": "Printers"
+    },
+    {
+      "id": "item-46",
+      "name": "M479 HP Cartridge magenta",
+      "quantity": "17",
+      "group": "Printers"
+    },
+    {
+      "id": "item-47",
+      "name": "M479 HP Cartridge yellow",
+      "quantity": "20",
+      "group": "Printers"
+    },
+    {
+      "id": "item-48",
+      "name": "M651 HP Cartridge black",
+      "quantity": "8",
+      "group": "Printers"
+    },
+    {
+      "id": "item-49",
+      "name": "M651 HP Cartridge blue",
+      "quantity": "10",
+      "group": "Printers"
+    },
+    {
+      "id": "item-50",
+      "name": "M651 HP Cartridge magenta",
+      "quantity": "9",
+      "group": "Printers"
+    },
+    {
+      "id": "item-51",
+      "name": "M651 Hp Cartridge yellow",
+      "quantity": "12",
+      "group": "Printers"
+    },
+    {
+      "id": "item-52",
+      "name": "M653 HP Cartridge black",
+      "quantity": "20",
+      "group": "Printers"
+    },
+    {
+      "id": "item-53",
+      "name": "M653 HP Cartridge blue",
+      "quantity": "8",
+      "group": "Printers"
+    },
+    {
+      "id": "item-54",
+      "name": "M653 HP Cartridge magenta",
+      "quantity": "7",
+      "group": "Printers"
+    },
+    {
+      "id": "item-55",
+      "name": "M653 HP Cartridge yellow",
+      "quantity": "7",
+      "group": "Printers"
+    },
+    {
+      "id": "item-56",
+      "name": "M880 HP Cartridge black",
+      "quantity": "9",
+      "group": "Printers"
+    },
+    {
+      "id": "item-57",
+      "name": "M880 HP Cartridge cyan",
+      "quantity": "6",
+      "group": "Printers"
+    },
+    {
+      "id": "item-58",
+      "name": "M880 HP Cartridge magenta",
+      "quantity": "12",
+      "group": "Printers"
+    },
+    {
+      "id": "item-59",
+      "name": "M880 HP Cartridge yellow",
+      "quantity": "16",
+      "group": "Printers"
+    },
+    {
+      "id": "item-60",
+      "name": "M880 HP drum black",
+      "quantity": "7",
+      "group": "Printers"
+    },
+    {
+      "id": "item-61",
+      "name": "M880 HP drum blue",
+      "quantity": "13",
+      "group": "Printers"
+    },
+    {
+      "id": "item-62",
+      "name": "M880 HP drum magenta",
+      "quantity": "9",
+      "group": "Printers"
+    },
+    {
+      "id": "item-63",
+      "name": "M880 HP drum yellow",
+      "quantity": "10",
+      "group": "Printers"
+    },
+    {
+      "id": "item-64",
+      "name": "M880 Roller Kit",
+      "quantity": "8",
+      "group": "Printers"
+    },
+    {
+      "id": "item-65",
+      "name": "M880 Transfer Kit",
+      "quantity": "3",
+      "group": "Printers"
+    },
+    {
+      "id": "item-66",
+      "name": "M880 Fuser Kit",
+      "quantity": "3",
+      "group": "Printers"
+    },
+    {
+      "id": "item-67",
+      "name": "Rally mounting kit",
+      "quantity": "1",
+      "group": "Video Conferance Appliances"
+    },
+    {
+      "id": "item-68",
+      "name": "Sandisk 16GB USB",
+      "quantity": "19",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-69",
+      "name": "Seagate 1TB SATA",
+      "quantity": "1",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-70",
+      "name": "Seagate 2TB",
+      "quantity": "5",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-71",
+      "name": "Seagate 4TB SATA",
+      "quantity": "2",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-72",
+      "name": "Server Equipments Box",
+      "quantity": "1",
+      "group": "Network Equipment"
+    },
+    {
+      "id": "item-73",
+      "name": "Suprema Xpass 2",
+      "quantity": "5",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-74",
+      "name": "Suprema Xpass",
+      "quantity": "1",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-75",
+      "name": "ThinkPad USN 3.0 Secure HardDrive 1TB",
+      "quantity": "12",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-76",
+      "name": "USB 2.0 B",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-77",
+      "name": "USB 3.0 A",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-78",
+      "name": "Usb C to Usb C New",
+      "quantity": "10",
+      "group": "Cables"
+    },
+    {
+      "id": "item-79",
+      "name": "Usb C to Usb C Used",
+      "quantity": "30",
+      "group": "Cables"
+    },
+    {
+      "id": "item-80",
+      "name": "USB Extensions",
+      "quantity": "13",
+      "group": "Cables"
+    },
+    {
+      "id": "item-81",
+      "name": "USB Hub",
+      "quantity": "3",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-82",
+      "name": "USB-C Dock Universal thunderbolt 4",
+      "quantity": "4",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-83",
+      "name": "USB-C Docking Station (used)",
+      "quantity": "100",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-84",
+      "name": "USB-C Docking Station",
+      "quantity": "111",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-85",
+      "name": "WD Portable HDD 1TB",
+      "quantity": "18",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-86",
+      "name": "WD Portable HDD 2TB",
+      "quantity": "22",
+      "group": "Hard Disk & Storage"
+    },
+    {
+      "id": "item-87",
+      "name": "HDMI",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-88",
+      "name": "Display Port",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-89",
+      "name": "Car Cables",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-90",
+      "name": "Cisco Cables",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-91",
+      "name": "USB 2.0 A",
+      "quantity": "1 Box",
+      "group": "Cables"
+    },
+    {
+      "id": "item-92",
+      "name": "VIISAN Scanner",
+      "quantity": "15",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-93",
+      "name": "Lenovo Workstation Dock",
+      "quantity": "5",
+      "group": "Docking Stations"
+    },
+    {
+      "id": "item-94",
+      "name": "Used Lenovo Workstation Dock",
+      "quantity": "1",
+      "group": "Docking Stations"
+    },
+    {
+      "id": "item-95",
+      "name": "Jabra Speaker",
+      "quantity": "17",
+      "group": "Peripherals"
+    },
+    {
+      "id": "item-96",
+      "name": "Samsung 45W Charger",
+      "quantity": "20",
+      "group": "Accessories"
+    }
+  ],
+  "lastUpdated": "2025-12-26T16:06:36.800987"
+}
