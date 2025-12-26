@@ -70,13 +70,47 @@ sudo bash -c "echo '{\"items\": [], \"lastUpdated\": \"'$(date -u +\"%Y-%m-%dT%H
 
 ---
 
-## Step 7: Build and Start Docker Container
+## Step 7: Check if Port 3000 is Available
+
+```bash
+sudo netstat -tulpn | grep 3000
+```
+
+**If port 3000 is in use, you have two options:**
+
+### Option A: Use a Different Port (Recommended)
+
+Edit docker-compose.yml to use port 3001:
+
+```bash
+sed -i 's/"3000:3000"/"3001:3000"/g' docker-compose.yml
+```
+
+Then continue with Step 8.
+
+### Option B: Stop What's Using Port 3000
+
+If you see a process using port 3000, stop it:
+
+```bash
+# Find the process ID
+sudo lsof -i :3000
+
+# Stop it (replace PID with the actual process ID from above)
+sudo kill -9 PID
+```
+
+---
+
+## Step 8: Build and Start Docker Container
 
 ```bash
 docker-compose up -d --build
 ```
 
 Wait for it to complete (may take 2-5 minutes).
+
+**If you changed the port to 3001, remember to use port 3001 in all subsequent commands.**
 
 ---
 
@@ -102,8 +136,14 @@ You should see: "Server running at http://localhost:3000"
 
 ## Step 10: Test the API Endpoint
 
+**If you're using port 3000:**
 ```bash
 curl http://localhost:3000/api/inventory
+```
+
+**If you changed to port 3001:**
+```bash
+curl http://localhost:3001/api/inventory
 ```
 
 Should return JSON data.
@@ -128,6 +168,7 @@ sudo nano /etc/nginx/sites-available/consumables
 
 When nano opens, paste this EXACT content:
 
+**If using port 3000:**
 ```
 server {
     listen 80;
@@ -135,6 +176,16 @@ server {
 
     location / {
         proxy_pass http://localhost:3000;
+```
+
+**If you changed to port 3001, use this instead:**
+```
+server {
+    listen 80;
+    server_name consumables.yourdomain.com;
+
+    location / {
+        proxy_pass http://localhost:3001;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -225,6 +276,11 @@ curl http://localhost:3000/api/inventory
 Open your browser and go to:
 ```
 http://your-server-ip:3000
+```
+
+**Or if you changed to port 3001:**
+```
+http://your-server-ip:3001
 ```
 
 Or if you configured Nginx:
