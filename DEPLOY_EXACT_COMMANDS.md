@@ -50,8 +50,22 @@ You should see: `Dockerfile`, `docker-compose.yml`, `server.js`, `package.json`,
 
 ## Step 6: Create inventory.json File (If It Doesn't Exist)
 
+If you get permission denied, use one of these:
+
+**Option A: Use sudo with tee (Recommended)**
 ```bash
+echo '{"items": [], "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'"}' | sudo tee inventory.json
+```
+
+**Option B: Fix directory permissions first**
+```bash
+sudo chown -R $USER:$USER /opt/consumables
 echo '{"items": [], "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'"}' > inventory.json
+```
+
+**Option C: Use sudo bash -c**
+```bash
+sudo bash -c "echo '{\"items\": [], \"lastUpdated\": \"'$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\"'}' > inventory.json"
 ```
 
 ---
@@ -340,7 +354,21 @@ sudo systemctl reload nginx
 cd /opt
 git clone https://github.com/DarsEdu/consumables-management.git consumables
 cd consumables
+sudo chown -R $USER:$USER /opt/consumables
 echo '{"items": [], "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'"}' > inventory.json
+docker-compose up -d --build
+docker ps
+docker logs consumables-app
+curl http://localhost:3000/api/inventory
+```
+
+**If you still get permission errors, use this instead:**
+```bash
+cd /opt
+git clone https://github.com/DarsEdu/consumables-management.git consumables
+cd consumables
+echo '{"items": [], "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'"}' | sudo tee inventory.json
+sudo chown $USER:$USER inventory.json
 docker-compose up -d --build
 docker ps
 docker logs consumables-app
