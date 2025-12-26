@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  consumables:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: consumables-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount inventory.json to persist data outside container
+      - ./inventory.json:/app/inventory.json
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    networks:
+      - consumables-network
+
+networks:
+  consumables-network:
+    driver: bridge
+

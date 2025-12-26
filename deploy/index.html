@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNHCR Türkiye Consumable Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="logo-container">
+                    <img src="unhcr-logo.png" alt="UNHCR Logo" class="unhcr-logo">
+                </div>
+                <h1>Consumable Management System</h1>
+            </div>
+            <div class="view-switcher">
+                <button class="view-btn active" id="kioskViewBtn">Kiosk View</button>
+                <button class="view-btn" id="tableViewBtn">Table View</button>
+            </div>
+            <div class="search-container" id="searchContainer">
+                <input type="text" id="searchInput" placeholder="Search items..." autocomplete="off">
+            </div>
+            <div class="controls-container" id="kioskControls">
+                <button class="control-btn" id="expandAllBtn">Expand All</button>
+                <button class="control-btn" id="collapseAllBtn">Collapse All</button>
+            </div>
+            <div class="controls-container" id="tableControls" style="display: none;">
+                <button class="control-btn" id="addItemBtn">+ Add Item</button>
+            </div>
+        </header>
+
+        <main id="inventoryContainer">
+            <div class="loading">Loading inventory...</div>
+        </main>
+
+        <footer class="app-footer">
+            <small>Created by Kemal Can Andaç - Senior ICT Assistant - December 2025</small>
+        </footer>
+
+        <!-- Modal for adding/editing items -->
+        <div id="itemModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Add New Item</h2>
+                <form id="itemForm">
+                    <div class="form-group">
+                        <label for="itemName">Item Name:</label>
+                        <input type="text" id="itemName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemQuantity">Quantity:</label>
+                        <input type="text" id="itemQuantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemGroup">Category:</label>
+                        <input type="text" id="itemGroup" list="categoryList" required>
+                        <datalist id="categoryList"></datalist>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="control-btn">Save</button>
+                        <button type="button" class="control-btn cancel-btn" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
